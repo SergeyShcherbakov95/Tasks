@@ -1,0 +1,5 @@
+SELECT DISTINCT D.idDriver from Drivers D, DriversAndCars DC, Cars C 
+	where D.idDriver = DC.idDriver and 
+		DC.idCar = C.idCar and  
+			C.carYear > '2010' and 
+				C.idCarPark = 1;
